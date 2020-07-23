@@ -30,3 +30,7 @@ body,html{
 .layui-form{
     padding: 0 30px;
 }
+.links{
+    display: flex;
+    justify-content: flex-end;
+}
