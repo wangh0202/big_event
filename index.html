@@ -21,8 +21,9 @@
             <!-- 头部区域（可配合layui已有的水平导航） -->
             <ul class="layui-nav layui-layout-right">
                 <li class="layui-nav-item">
-                    <a href="javascript:;">
+                    <a href="javascript:;" class="userinfo">
                         <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+                        <span class="text-avatar">A</span>
                         个人中心
                     </a>
                     <dl class="layui-nav-child">
@@ -32,7 +33,7 @@
                     </dl>
                 </li>
                 <li class="layui-nav-item">
-                    <a href=""><span class="iconfont icon-tuichu"></span>退出</a>
+                    <a href="javascript:;" id="btnLoginOut"><span class="iconfont icon-tuichu"></span>退出</a>
                 </li>
             </ul>
         </div>
@@ -47,7 +48,7 @@
                 <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
                 <ul class="layui-nav layui-nav-tree" lay-filter="test" lay-shrink="all">
                     <li class="layui-nav-item layui-this">
-                        <a href="/home/dashboard.html" target="fm"><span class="iconfont icon-home"></span>首页</a>
+                        <a href="./home/dashboard.html" target="fm"><span class="iconfont icon-home"></span>首页</a>
                     </li>
                     <li class="layui-nav-item">
                         <a class="" href="javascript:;"><span class="iconfont icon-16"></span>文章管理</a>
@@ -94,6 +95,10 @@
 
     <!-- 导入js -->
     <script src="./assets/lib/layui/layui.all.js"></script>
+    <script src="./assets/lib/jquery.js"></script>
+    <!-- 导入自己的js文件 -->
+    <script src="./assets/js/baseAPI.js"></script>
+    <script src="./assets/js/index.js"></script>
 </body>
 
 
