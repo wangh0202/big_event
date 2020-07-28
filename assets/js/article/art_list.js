@@ -12,7 +12,7 @@ $(function(){
     template.defaults.imports.dataFormat = function(date){
         const dt = new Date(date);
         var y = dt.getFullYear();
-        console.log(date);
+        // console.log(date);
         var m = padZero(dt.getMonth() + 1);
         var d = padZero(dt.getDate());
         var hh = padZero(dt.getHours());
@@ -66,7 +66,7 @@ $(function(){
                 }
                 //调用模板引擎渲染分类的可选项
                 var htmlStr = template('tpl-cate',res);
-                console.log(htmlStr);
+                // console.log(htmlStr);
                 $('[name=cate_id]').html(htmlStr);
                 //通知layui重新渲染表单区域的ui结构
                 form.render();

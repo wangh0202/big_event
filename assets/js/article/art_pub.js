@@ -62,7 +62,7 @@ $(function(){
     var art_state = '已发布';
 
     //存为草稿
-    $('#btnSave2').on('clck', function () {
+    $('#btnSave2').on('click', function () {
         art_state = '草稿';
     });
 
@@ -75,9 +75,10 @@ $(function(){
 
         //3.将发布状态添加到fd中
         fd.append('state',art_state);
-        // fd.forEach(function (v,k) {
-        //     console.log(v,k);
-        // })
+        // console.log(fd);
+        fd.forEach(function (v,k) {
+            console.log(v,k);
+        })
         //4.将封面裁剪过后的图片输出为一个文件对象
         $image
         .cropper('getCroppedCanvas', { // 创建一个 Canvas 画布
@@ -109,7 +110,7 @@ $(function(){
                 }
                 layer.msg('发布成功');
                 //发布成功，跳转到列表页面
-                location.href('/article/art_list.html');
+                location.href = '/article/art_list.html' ;
             }
         });
     }
